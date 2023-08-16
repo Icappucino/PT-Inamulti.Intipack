@@ -1,0 +1,698 @@
+/* ========================= */
+/* ======={ License }======= */
+/* =========================
+// Copyright && Icappucino 2023
+// Github : https://github.com/Icappucino
+// Instagram : https://www.instagram.com/icappucino_/
+// Powered by Spacecode.id
+// Instagram Vendor : https://www.instagram.com/spacecode.id/
+============================= */
+
+
+/* ========================= */
+/* ===={ DOCUMENT ROOT }==== */
+/* ========================= */
+:root{
+
+        /* ===={ ROOT Color }==== */
+        --col-primary: #77363B;
+        --col-bg: lightgrey;
+        --col-dark: #001C30;
+        --col-sub-head: #1D5D9B;
+        --col-bg-dark: #03001C;
+        --col-link: #2F58CD;
+        --col-1: #524A4E;
+        --col-2: #FDEFF4;
+        --col-3: #FF5C8D;
+        --col-4: #F4EEA9;
+        --col-new: #102C57;
+
+        /* ===={ Font-Size ROOT }==== */
+        --f-title: 48px;
+        --f-sub-header: 36px;
+        --f-sub-title: 24px;
+        --f-button: 18px;
+        --f-paragraf: 14px;
+        --f-new: 28px;
+
+        /* ===={ Font ROOT }==== */
+        --font-all: 'Inter', sans-serif;
+        --font-primary: 'Poppins', sans-serif;
+
+        /* ===={ Z-index ROOT }==== */
+        --z-primary: 99;
+        --z-nav: 5;
+        --z-all: 3;
+        --z-img: 1;
+
+        /* ===={ Weight ROOT }==== */
+        --w-1: 700;
+        --w-2: 600;
+        --w-3: 500;
+        --w-b: bold;
+
+        /* ===={ height ROOT }==== */
+        --h-button: 40px;
+        --h-body: 100vh;
+        --h-1: 35px;
+        --h-2: 30px;
+        --h-3: 25px;
+        --h-4: 20px;
+
+        /* ===={ border radius ROOT }==== */
+        --br-rounded: 50px;
+        --br-1: 20px;
+        --br-2: 15px;
+        --br-3: 10px;
+        --br-4: 5px;
+
+}
+
+/* ========================= */
+/* ===={ Body Setting }===== */
+/* ========================= */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/bg-hero.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: var(--h-body);
+}
+*{
+    font-family: var(--font-all);
+    z-index: var(--z-all);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    font-family: var(--font-primary);
+    color: var(--col-2);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* =========================== */
+/* ===={ Button Setting  }==== */
+/* =========================== */
+.button-hero{
+    background-color: var(--col-primary);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-2);
+    font-size: var(--f-button);
+}
+.button-about{
+    background-color: var(--col-2);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-dark);
+    font-size: var(--f-button);
+}
+.button-product{
+    background-color: var(--col-3);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-dark);
+    font-size: var(--f-button);
+    text-transform: capitalize;
+}
+.button-peluang{
+    background-color: var(--col-2);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-dark);
+    font-size: var(--f-button);
+}
+.button-hvr{
+    background-color: var(--col-3);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-dark);
+    font-size: var(--f-button);
+    text-transform: capitalize;
+}
+.button-career{
+    background-color: var(--col-link);
+    width: 194px;
+    height: var(--h-button);
+    border: none;
+    border-radius: var(--br-rounded);
+    color: var(--col-2);
+    font-size: var(--f-button);
+}
+/* ===={ Button Hover Setting }==== */
+.button-hero:hover,
+.button-about:hover,
+.button-peluang:hover,
+.button-career:hover{
+    background-color: var(--col-3);
+    color: var(--col-2);
+}
+.button-product:hover{
+    background-color: var(--col-primary);
+    color: var(--col-2);
+}
+/* ============================== */
+/* ===={ Responsive Setting }==== */
+/* ============================== */
+
+/* ===={ Desktop Screen }==== */
+
+/* ===={ Tablet Screen }==== */
+@media screen and (max-width: 576px) {
+    #astroll-details .img-produk-details{
+        height: 100%;
+    }
+    #kofil-details{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+/* ===={ Smartphone Screen }==== */
+@media  screen and (max-width: 350px){
+
+    #hero .hero-title{
+        font-size: var(--f-sub-title);
+    }
+    #hero .hero-sub-title{
+        font-size: var(--f-paragraf);
+    }
+
+    #astroll-details .img-produk-details{
+        height: 100%;
+    }
+    #kofil-details{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    #career{
+        height: 100vh;
+    }
+}
+
+/* ========================== */
+/* ===={ Navbar Setting }==== */
+/* ========================== */
+.navbar{
+    z-index: var(--z-nav);
+    background-color: var(--col-primary);
+    transition: all ease-in .3s;
+}
+.nav-link, .nav-link.active{
+    color: var(--col-2);
+    font-size: var(--f-paragraf);
+}
+.nav-color{
+    background-color: var(--col-primary);
+    transition: all ease-in-out .3s;
+    z-index: var(--z-nav);
+}
+.menu-dropdown{
+    background-color: var(--col-primary);
+    color: var(--col-2);
+}
+.dropdown-menu{
+    background-color: var(--col-primary);
+}
+/* .navbar-brand{
+    background-color: var(--col-primary);
+}
+*/
+/* ===={ Hover Setting }==== */
+.nav-link:hover,
+.nav-link.active:hover{
+    color: var(--col-3);
+    border-bottom: 2px solid var(--col-3);
+}
+.menu-dropdown:hover{
+    background-color: var(--col-3);
+    color: var(--col-2);
+}
+/* ========================== */
+/* ===={ Home Setting }====== */
+/* ========================== */
+#hero{
+    height: var(--h-body);
+    width: 100%;
+    margin: 0;
+}
+.hero-title{
+    text-transform: uppercase;
+    font-size: var(--f-new);
+    font-weight: var(--w-2);
+    font-family: var(--font-primary);
+    color: var(--col-3);
+}
+.hero-sub-title{
+    font-size: var(--f-sub-title);
+    color: var(--col-2);
+    font-weight: var(--w-3);
+}
+/* ===={ Layanan Setting }==== */
+#layanan{
+    padding: 100px 0;
+    background-color: var(--col-bg);
+}
+#polyester-details{
+    padding: 100px 0;
+    background-color: var(--col-bg);
+}
+/* ===={ Card Setting }==== */
+.card-layanan{
+    width: 100%;
+    height: 313px;
+    border-radius: var(--br-3);
+    background-color: var(--col-2);
+    padding: var(--h-button);
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out .3s;
+    margin-bottom: 40px;
+}
+.hidden-content{
+    display: none;
+}
+/* ===={ Polyester Setting }==== */
+.card-polyester{
+    width: 100%;
+}
+.polyester-detail{
+    color: var(--col-dark);
+    font-size: var(--f-paragraf);
+}
+.polyester-paragraf{
+    color: var(--col-dark);
+    font-size: var(--f-sub-header);
+}
+.polyester-sub-header{
+    color: var(--col-dark);
+    font-size: var(--f-sub-title);
+}
+.sub-list{
+    font-weight: var(--w-b);
+}
+/* ===={ Card Setting Hover }==== */
+.card-layanan:hover{
+    background-color: var(--col-4);
+    height: 320px;
+}
+.card-layanan:hover .hidden-content{
+    display: block;
+}
+.layanan-title{
+    color: var(--col-2);
+    font-size: var(--f-sub-title);
+    text-transform: uppercase;
+    background-color: var(--col-primary);
+    padding: var(--br-4);
+    border-radius: var(--br-3);
+    opacity: 50%;
+}
+.ket-lay-title{
+    color: var(--col-primary);
+    font-size: var(--f-sub-header);
+    text-transform: uppercase;
+    padding-top: var(--br-rounded);
+}
+.ket-lay-par{
+    color: var(--col-dark);
+    font-size: var(--f-button);
+}
+/* ===={ Image Layanan Setting }==== */
+.img-layanan{
+    width: 328px;
+    height: 212px;
+}
+.img-layanan-2{
+    border-radius: var(--br-3);
+    width: 628px;
+}
+/*  Client Section */
+.client-title{
+    color: var(--col-primary);
+    font-size: var(--f-sub-header);
+}
+.clients {
+    padding-top: 20px;
+  }
+
+  .clients .swiper-slide img {
+    transition: 0.3s;
+  }
+
+  .clients .swiper-slide img:hover {
+    filter: none;
+    opacity: 1;
+  }
+
+  .clients .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .clients .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    background-color: #ddd;
+  }
+
+  .clients .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffc451;
+  }
+
+/* ============================ */
+/* ===={ Anout Setting }====== */
+/* ============================ */
+#about{
+    height: var(--h-body);
+    width: 100%;
+    margin: 0;
+    background-image: url("/img/image-6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#visi-misi{
+    padding: 100px 0;
+    background-color: var(--col-bg);
+}
+
+.about-sub-paragraf{
+    color: var(--col-primary);
+    font-size: var(--f-sub-header);
+}
+.about-paragraf{
+    color: var(--col-dark);
+    font-size: var(--f-button);
+    word-wrap: break-word;
+}
+
+.card-about{
+    width: 100%;
+}
+.about-p-misi{
+    color: var(--col-dark);
+    font-size: var(--f-paragraf);
+}
+/* ===={ Image About Setting }==== */
+.img-misi{
+    width: 409px;
+    height: 212px;
+    margin-bottom: var(--h-button);
+}
+/* ============================= */
+/* ===={ Product Setting }====== */
+/* ============================= */
+#produk{
+    background-color: var(--col-bg);
+    height: 170vh;
+    font-family: var(--font-all);
+    padding: 100px 0;
+}
+.title-produk{
+    color: var(--col-dark);
+    font-size: var(--f-sub-header);
+    text-transform: uppercase;
+    padding: var(--br-3);
+}
+.sub-title-produk{
+    color: var(--col-dark);
+    font-size: var(--f-button);
+}
+.card{
+    height: 440px;
+    border: none;
+    border-radius: var(--br-3);
+    background-color: transparent;
+    transition: all ease-in .3s;
+}
+/* ===={ Card Setting Hover }==== */
+.card:hover{
+    background-color: var(--col-4);
+    transition: all ease-in-out .3s;
+    height: 420px;
+}
+/* ==================================== */
+/* ===={ Peluang Bisnis Setting }====== */
+/* ==================================== */
+#peluang-bisnis{
+    height: var(--h-body);
+    width: 100%;
+    margin: 0;
+}
+.peluang-title{
+    text-transform: uppercase;
+    font-size: var(--f-title);
+    font-weight: var(--w-2);
+    font-family: var(--font-primary);
+    color: var(--col-2);
+}
+.peluang-sub-title{
+    font-size: var(--f-button);
+    color: var(--col-2);
+    font-weight: var(--w-3);
+}
+#keterangan-peluang{
+    padding: 100px 0;
+    background-color: var(--col-bg);
+}
+.peluang-paragraf{
+    color: var(--col-dark);
+    font-size: var(--f-button);
+    word-wrap: break-word;
+}
+.Peluang-sub-paragraf{
+    color: var(--col-dark);
+    font-size: var(--f-sub-header);
+}
+.sub-header{
+    color: var(--col-dark);
+    font-size: var(--f-sub-title);
+    text-transform: uppercase;
+}
+/* ==================================== */
+/* ===={ Produk Details Setting }====== */
+/* ==================================== */
+.details-title{
+    color: var(--col-primary);
+    font-size: var(--f-sub-header);
+}
+/* ===={ Astroll Setting }==== */
+#astroll-details{
+    background-color: var(--col-bg);
+    height: 170vh;
+    font-family: var(--font-all);
+    padding: 100px 0;
+}
+.details-product-paragraf{
+    color: var(--col-dark);
+    font-size: var(--f-button);
+    word-wrap: break-word;
+}
+.card-produk-details{
+    width: 100%;
+}
+.details-produk-sub-header{
+    color: var(--col-sub-head);
+    font-size: var(--f-sub-title);
+}
+/* ===={ Image Setting }==== */
+.img-produk-details{
+    height: 350px;
+}
+/* ===={ Amidroll Setting }==== */
+#amidroll-details{
+    background-color: var(--col-bg);
+    height: 200vh;
+    font-family: var(--font-all);
+    padding: 100px 0;
+}
+/* ===={ Kofil Setting }==== */
+#kofil-details{
+    background-color: var(--col-bg);
+    height: 170vh;
+    font-family: var(--font-all);
+    padding: 100px 0;
+}
+.kofil-deskripsi{
+    padding-left: var(--br-1);
+}
+.kofil-list{
+    color: var(--col-primary);
+    font-size: var(--f-button);
+}
+/* ============================= */
+/* ====={ Career Setting }====== */
+/* ============================= */
+#career{
+    padding: 100px 0;
+    background-color: var(--col-bg);
+}
+.career-title{
+    color: var(--col-bg-dark);
+    padding-bottom: 5px;
+}
+.career-judul{
+    color: var(--col-primary);
+    font-size: var(--f-new);
+    text-transform: uppercase;
+}
+.career-pos{
+    color: var(--col-primary);
+    font-weight: var(--w-b);
+}
+.career-desk{
+    color: var(--col-dark);
+}
+.career-sub-desk{
+    color: var(--col-primary);
+    font-size: var(--f-button);
+    font-weight: var(--w-b);
+}
+.career-img{
+    height: 270px;
+    width: 270px;
+}
+.career-job{
+    color: var(--col-bg-dark);
+}
+.card-career{
+    background-color: var(--col-2);
+    display: flex;
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: var(--br-3);
+}
+.card-text {
+    padding: 20px; /* Add padding to the text content */
+}
+.card-posting{
+    background-color: var(--col-new);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+label{
+    padding-bottom: 5px;
+}
+/* ============================= */
+/* ===={ Contact Setting }====== */
+/* ============================= */
+#contact{
+    height: 130vh;
+    width: 100%;
+    margin: 0;
+    background-image: url("/img/image-6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#contact strong{
+    color: var(--col-dark);
+}
+.header-contact{
+    color: var(--col-2);
+    font-size: var(--f-sub-header);
+    padding-top: 100px;
+}
+.title-contact{
+    color: var(--col-primary);
+    font-size: var(--f-sub-header);
+}
+.card-contact{
+    background-color: #fff;
+    padding: var(--br-3);
+    border-radius: var(--br-3);
+}
+.icon-contact{
+    background-color: var(--col-sub-head);
+    padding: var(--br-3);
+    border-radius: 0 0 10px 10px;
+}
+.contact-paragraf{
+    font-size: var(--f-button);
+    color: var(--col-dark);
+}
+.mail-contact{
+    color: var(--col-link);
+}
+.contact-head-5{
+    color: var(--col-bg-dark);
+    font-size: var(--f-button);
+}
+/* ===={ Contact Hover Setting }==== */
+
+
+/* ============================ */
+/* ===={ Footer Setting }====== */
+/* ============================ */
+
+#footer{
+    background-color: var(--col-1);
+}
+
+.footer-title{
+    font-size: var(--f-sub-title);
+}
+.footer-img{
+    height: 100px;
+}
+
+/* ===={ Icons Setting }==== */
+.bi-twitter{
+    padding-right: var(--br-4);
+}
+.bx-envelope{
+    font-size: var(--h-4);
+    color: var(--col-3);
+    border: 2px solid var(--col-3);
+    padding: var(--br-3);
+    border-radius: var(--br-rounded);
+}
+.bi-linkedin,
+.bi-instagram,
+.bi-facebook{
+    color: var(--col-3);
+    border: 2px solid var(--col-3);
+    font-size: var(--f-button);
+    padding: var(--br-3);
+    border-radius: var(--br-rounded);
+}
+.bxs-phone{
+    font-size: var(--h-4);
+    color: var(--col-3);
+    border: 2px solid var(--col-3);
+    padding: var(--br-3);
+    border-radius: var(--br-rounded);
+}
+/* ===={ Hover Setting }==== */
+.bi-linkedin:hover,
+.bi-instagram:hover,
+.bi-facebook:hover,
+.bx-envelope:hover,
+.bxs-phone:hover{
+    color: var(--col-4);
+    border: 2px solid var(--col-4);
+    transition: all ease-in-out .3s;
+}
